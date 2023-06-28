@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórico</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+ <body>
+    <h2>Histórico de cálculos de pessoas</h2>
+
+    <table id="table_pessoas">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </table>
+  </body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        var token = window.localStorage.getItem('token');
+        preencherHistorico(token);
+    });
+
+    function preencherHistorico(token){
+      $("#table_pessoas").not(':first').remove();
+      var html = '';
+
+      $.ajax({
+            url: "http://localhost:24961/Pessoa",
+            type: "GET",
+            contentType: "application/json",
+            dataType: "json",
+            headers: {'Authorization': 'Bearer ' + token},
+            success: function (response) {
+                for (var i = 0; i < response.length; i ++) {
+                    html += '<tr class="table-row">' +
+                        '<td>' + response[i].id + '</td>' +
+                        '<td>' + response[i].nome + '</td>' +
+                        '<td><button onclick="verDetalhes(' + response[i].id +')"">Ver detalhes</button><td>' +
+                        '<td><button onclick="remover(' + response[i].id +')"">Excluir</button><td>'
+                            '</tr>';
+                }
+                
+
+                $("#table_pessoas tr").first().after(html);
+            },
+            error: function (request, message, error) {
+                alert("Erro ao obter histórico")
+            }
+        })
+
+    }
+
+    function verDetalhes(id) {
+        window.location.href = "./detalhes.html?id=" + id
+    }
+
+    function remover(id){
+        if(confirm("Você tem certeza que deseja excluir o registro Id: " + id + "?") == true) {
+            var token = window.localStorage.getItem('token');
+
+            $.ajax({
+            url: "http://localhost:24961/Pessoa/" + id,
+            type: "DELETE",
+            contentType: "application/json",
+            dataType: "json",
+            headers: {'Authorization': 'Bearer ' + token},
+            success: function (response) {
+                location.reload();
+            },
+            error:function (request, message, error) {
+                alert("Erro ao deletar o histórico da pessoa")
+            }
+        });
+    }
+ }  
+</script>
+    

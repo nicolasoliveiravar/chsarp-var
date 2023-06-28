@@ -1,0 +1,10 @@
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\bin\Debug\netcoreapp3.1\WebAPiPessoa.Repository.deps.json
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\bin\Debug\netcoreapp3.1\WebAPiPessoa.Repository.dll
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\bin\Debug\netcoreapp3.1\WebAPiPessoa.Repository.pdb
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.csproj.AssemblyReference.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.AssemblyInfoInputs.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.AssemblyInfo.cs
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.csproj.CoreCompileInputs.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.dll
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Repository\obj\Debug\netcoreapp3.1\WebAPiPessoa.Repository.pdb

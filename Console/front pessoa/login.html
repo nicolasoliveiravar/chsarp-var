@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h2>Login</h2>
+
+    <label for="txt_nome">Usuário</label>
+    <input type="text" placeholder="Digite o usuário" id="txt_usuario" />
+
+    <label for="txt_nome">Senha</label>
+    <input type="password" placeholder="Digite a senha" id="txt_senha" />
+
+    <button onclick="login()">Entrar</button>
+    <button onclick="cadastrar()">Cadastre-se</button>
+   </body>
+</html>
+
+<script>
+function cadastrar(){
+        window.location.href = "./cadastro.html"
+    }
+
+    function login() {
+        var requestAutenticacao = {
+            "UserName": $("#txt_usuario").val(),
+            "Password": $("#txt_senha").val()
+        }
+
+        $.ajax({
+            url: "http://localhost:24961/Autenticacao",
+            type: "POST",
+            data: JSON.stringify(requestAutenticacao),
+            contentType: "application/json",
+            dataType: "json",
+            success: function (response) {
+                var token = response.token;
+                var usuarioId = response.usuarioId;
+                window.localStorage.setItem('token', token);
+                window.localStorage.setItem('usuarioId', usuarioId);
+                window.location.href = './index.html';
+            },
+            error: function (request, message, error) {
+                alert("Erro ao se autenticar")
+            }
+        })
+    }
+</script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Senha</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h2>Cadastre-se</h2>
+
+    <label for="txt_nome">Nome</label>
+    <input type="text" placeholder="Digite o nome" id="txt_nome" />
+
+    <label for="txt_usuario">Usuário</label>
+    <input type="text" placeholder="Digite o usuário" id="txt_usuario" />
+
+    <label for="txt_senha">Senha</label>
+    <input type="password" placeholder="Digite a senha" id="txt_senha" />
+
+    <label for="txt_senha_confirma">Confirme a senha</label>
+    <input type="password" placeholder="Digite a senha" id="txt_senha_confirma" />
+
+    <button onclick="cadastar()">Cadastrar</button>
+   </body>
+
+</html>
+
+<script>
+function cadastrar() {
+    if($("#txt_senha").val() != $("#txt_senha_confirma").val()){
+        alert('as senhas não conferem.');
+        return;
+    }
+    var requestUsuario = {
+        "Nome": $("#txt_nome").val(),
+        "Usuario": $("#txt_usuario").val(),
+        "Senha": $("#txt_senha").val()
+    }
+    
+    $.ajax({
+        url: "http://localhost:24961/Usuario",
+        type: "POST",
+        data: JSON.stringify( requestUsuario),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (response) {
+            window.location.href = './Login.html';
+        },
+        error: function (request, message, error) {
+            alert("Erro ao criar usuário")
+        }
+    })
+}
+</script>

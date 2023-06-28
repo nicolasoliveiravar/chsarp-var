@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Olá mundo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Integração do front com o back</h1>
+    <h2>Aperte o botão para receber a mensagem do backend</h2>
+    <h2 id="mensagem webapi">...</h2>
+    <button onclick="chamarApi ()">Enviar</button>
+</body>
+</html>
+
+<script>
+    function chamarApi() {
+        $.ajax({
+            url: "http://localhost:6755/OlaMundo1",
+            type: "GET",
+            dataType: "json",
+            sucess: function (resposta) {
+                console.log(resposta)
+               $("mensagem webapi").text(resposta.mensagem)
+            },
+            error: function (request, message, error) {
+                alert(message) 
+            }
+        })
+    }
+</script>

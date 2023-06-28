@@ -1,0 +1,15 @@
+C:\Users\Nicolas\Documents\Console\pessoa\bin\Debug\net6.0\pessoa.exe
+C:\Users\Nicolas\Documents\Console\pessoa\bin\Debug\net6.0\pessoa.deps.json
+C:\Users\Nicolas\Documents\Console\pessoa\bin\Debug\net6.0\pessoa.runtimeconfig.json
+C:\Users\Nicolas\Documents\Console\pessoa\bin\Debug\net6.0\pessoa.dll
+C:\Users\Nicolas\Documents\Console\pessoa\bin\Debug\net6.0\pessoa.pdb
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.AssemblyInfo.cs
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.dll
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\refint\pessoa.dll
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.pdb
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\pessoa.genruntimeconfig.cache
+C:\Users\Nicolas\Documents\Console\pessoa\obj\Debug\net6.0\ref\pessoa.dll

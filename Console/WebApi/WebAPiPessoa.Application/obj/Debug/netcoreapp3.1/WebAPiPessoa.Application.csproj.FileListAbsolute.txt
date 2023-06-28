@@ -1,0 +1,13 @@
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\bin\Debug\netcoreapp3.1\WebAPiPessoa.Application.deps.json
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\bin\Debug\netcoreapp3.1\WebAPiPessoa.Application.dll
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\bin\Debug\netcoreapp3.1\WebAPiPessoa.Application.pdb
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.csproj.AssemblyReference.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.AssemblyInfoInputs.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.AssemblyInfo.cs
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.csproj.CoreCompileInputs.cache
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.dll
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.pdb
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\bin\Debug\netcoreapp3.1\WebAPiPessoa.Repository.dll
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\bin\Debug\netcoreapp3.1\WebAPiPessoa.Repository.pdb
+C:\Users\TETE\Documents\Console\WebApi\WebAPiPessoa.Application\obj\Debug\netcoreapp3.1\WebAPiPessoa.Application.csproj.CopyComplete

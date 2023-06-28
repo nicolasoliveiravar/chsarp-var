@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Senha</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h2>Alterar senha</h2>
+
+    <label for="txt_nome">Nome</label>
+    <input type="text" placeholder="Digite o nome" id="txt_nome" />
+
+    <label for="txt_usuario">Usuário</label>
+    <input type="text" placeholder="Digite o usuário" id="txt_usuario" />
+
+    <label for="txt_senha">Senha</label>
+    <input type="password" placeholder="Digite a senha" id="txt_senha" />
+
+    <button onclick="alterarSenha()">Salvar</button>
+   </body>
+</html>
+
+<script>
+    function alterarSenha() {
+        var requestAlterarSenha = {
+            "Nome": $("#txt_nome").val(),
+            "Usuario": $("#txt_usuario").val(),
+            "Senha": $("#txt_senha").val()
+        }
+
+        var id = window.localStorage.getItem('usuarioId');
+        var token = window.localStorage.getItem('token');
+
+        $.ajax({
+            url: "http://localhost:24961/Usuario/" + id,
+            type: "PUT",
+            data: JSON.stringify( requestAlterarSenha),
+            contentType: "application/json",
+            dataType: "json",
+            headers: {'Authorization': 'Bearer ' + token},
+            success: function (response) {
+                window.location.href = './Login.html';
+            },
+            error: function (request, message, error) {
+                alert("Erro atualizar informações do usuário")
+            }
+        })
+    }
+</script>
